@@ -1,6 +1,7 @@
 # Developing a Simple Webserver
-Name: Karthi Govindharaju
-ID: ISAI005
+Name: Thrinesh royal
+ID: 23004810
+email: thrineshroyal5@gmail.com
 
 # AIM:
 
