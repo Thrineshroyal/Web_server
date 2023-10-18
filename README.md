@@ -1,8 +1,9 @@
 # Developing a Simple Webserver
-Name: Thrinesh royal
-ID: 23004810
-email: thrineshroyal5@gmail.com
+Name : Thrinesh Royal
 
+ID : 23004810
+
+Dept : AIDS
 # AIM:
 
 Develop a webserver to display about top five web application development frameworks.
@@ -29,34 +30,41 @@ Serving the HTML pages.
 
 Testing the webserver
 # PROGRAM:
-```from http.server import HTTPServer , BaseHTTPRequestHandler
+```
+from http.server import HTTPServer, BaseHTTPRequestHandler
 
-content="""
+content = """
 <html>
 <head>
 </head>
 <body>
-<h1>welcome</h1>
+<h1>Top Five Web Application Development Frameworks</h1>
+
+<h1>1. Django</h1>
+<h1>2. MEAN Stack</h1>
+<h1>3. React</h1>
+<h1>4. Ruby on Rails</h1>
+<h1>5. Angular</h1>
+
 </body>
 </html>
 """
 
 class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        print("Get request recieved")
+        print("Get request received")
         self.send_response(200)
-        self.send_header('Content-type','text/html;charset=utf-8')
+        self.send_header('Content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
 
-print("This is my webserver")
-server_address = ('',80)
-httpd = HTTPServer(server_address,HelloHandler)
-httpd.serve.forever()
+print("This is my web server")
+server_address = ('', 80)
+httpd = HTTPServer(server_address, HelloHandler)
+httpd.serve_forever()
 ```
 # OUTPUT:
-![WhatsApp Image 2023-10-18 at 11 41 47_d2202f79](https://github.com/Thrineshroyal/Web_server/assets/145741928/f56b0a36-7d06-4a5d-8f03-59b873b3d990)
-
+![output](images/Screenshot%202023-10-18%20132710.png)
 # RESULT:
 
-The program is executed succesfully
+The program is executed succesfully.
