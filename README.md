@@ -64,7 +64,8 @@ httpd = HTTPServer(server_address, HelloHandler)
 httpd.serve_forever()
 ```
 # OUTPUT:
-![output](images/Screenshot%202023-10-18%20132710.png)
+![WhatsApp Image 2023-10-18 at 20 17 07_fd76b567](https://github.com/Thrineshroyal/Web_server/assets/145741928/2c5f90f9-87e3-4a06-8575-cbe8419b3b14)
+
 # RESULT:
 
 The program is executed succesfully.
